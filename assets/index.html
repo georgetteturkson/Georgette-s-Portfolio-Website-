@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Portfolio</title>
+    <link rel ="stylesheet" href="style.css" />
+    <link rel ="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+       <div class ="logo"> Georgette Turkson</div>
+       <div> 
+        <ul class="nav-links"> 
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        </ul>
+       </div>
+    </nav>
+    <nav id="hamburger-nav">
+     <div class="logo">Georgette Turkson</div>
+     <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+       </nav>
+<section id="profile">
+    <div class="section__pic-container">
+             <img 
+             src="./georgette_profilepic.jpeg" 
+             alt="Georgette Turkson profile picture"> 
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Georgette Turkson</h1>
+        <p class="section__text__p2">People, data and product</p>
+        <div class="btn-container">
+            <button 
+            class="btn btn-color-2" 
+            onclick="location.href='https://shorturl.at/uGeFd'">
+            Download CV
+           </button>
+           <button 
+            class="btn btn-color-1"
+            onclick="window.location.href='mailto:georgetteoturkson@gmail.com'">
+            Email
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./linkedin.png" alt="My LinkedIn Profile"
+            class ="icon" onclick="location.href='http://linkedin.com/in/georgetteturksonofosuhemaa'">
+            <img src="./github.png" alt="Github Profile"
+            class ="icon" onclick="location.href='https://github.com/georgetteturkson'">
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+          <img 
+              src="./georgette_grad.png" 
+              alt="Profile Picture"
+              class="about-pic"
+       />
+    </div>
+    <div class="about-details-container">
+       <div class="about-containers">
+         <div class="details-container">
+             <h3>Experience</h3>
+             <p>Predictive Analysis<br/>Funnel Analysis</br>UX Design Research</br>Product Marketing</p>
+    </div>
+    <div class="details-container">
+             <h3>Education</h3>
+             <p>BS in Management Information Systems & Business Analytics</p>
+           </div>
+       </div>
+       <div class="text-container">
+        <p>Hello! I am Georgette, a recent graduate with a Bachelor of Science in Management Information Systems & Business Analytics. My journey has been fueled by a passion for using data to drive impactful decisions and deliver outstanding user experiences. This summer, I sharpened my skills in SQL, R, and Python through projects in predictive analysis, business metrics optimization, and user behavior.
+           In my previous roles, I played a key role in launching a high-revenue app, refining customer engagement strategies, and leading cross-functional teams to enhance product features and satisfaction. As a strategy consultant, I successfully secured significant funding and developed impactful community programs.
+           
+           Beyond my work with data, I am dedicated to giving back to the community through volunteering. I am excited to bring my enthusiasm for user-centric design and data-driven insights to a product team, where I can drive meaningful results. Looking forward to the chance to contribute and grow with your team!</p>
+       </div>  
+    </div>
+</div>
+<img 
+src="./arrow.png" 
+alt="Arrow icon" 
+class="icon arrow" 
+onclick="location.href='./#projects'"/>
+</section>
+<section id="projects">
+    <p class="section__text__p1">Browse My Summer Projects</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./whatsappbusiness.png"
+              alt="whatsapp business logo"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title"> LocalFind: Discover Businesses Near You</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.canva.com/design/DAGPKCEoZYc/BKyPxejnEPfrNr3sCUmISQ/view?utm_content=DAGPKCEoZYc&utm_campaign=designshare&utm_medium=link&utm_source=editor'"
+            >
+              Presentation
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.figma.com/proto/ivolYk44vSc1kp7mFlSK1P/FindLocal?node-id=1-2&t=B8E5T1kGqdWTV3mX-1&starting-point-node-id=1%3A2'"
+            >
+              Figma Prototype
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./subscriptions.png"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title"> Product Metrics Dashboard, Subscriptions</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/georgetteturkson/Analyzing-Business-Metrics-Dashboard'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://public.tableau.com/app/profile/georgette.turkson/viz/ProductMetricsDashbaordSubscriptions/SubscriptionDashboard?publish=yes'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./relax.png"
+              alt="Project 2"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Predicting User Adoption</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/georgetteturkson/Predicting-User-Adoption'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://public.tableau.com/app/profile/georgette.turkson/viz/AppAdoptionMetricsDashboard/AdoptionDashboardInProgress?publish=yes'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./instacart.png"
+              alt="Project 3"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">Instacart Personal Shoppers: A Mini Casestudy</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.canva.com/design/DAF__Bg0RrE/i5Bimc2I7uUq4svPigxDFQ/edit'"
+            >
+              Presentation
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.canva.com/design/DAGNfVUukPU/PJ7PRNHbM8c8Vspon7UQJg/edit?utm_content=DAGNfVUukPU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'"
+            >
+              User Journey Mapping
+            </button>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#profile'"/>
+        </section>
+       <footer>
+       <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links"> 
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+        </div>
+       </nav> 
+       </footer>
+        <script src="scr#ipt.js"></script> 
+</body>
+</html>
+
